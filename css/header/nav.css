@@ -9,6 +9,14 @@
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 992px) {
+  .nav {
+    position: relative;
+    width: 100%;
+    background: transparent;
+  }
+}
+
 .open {
   width: 100%;
 }
@@ -23,6 +31,18 @@
   padding: 22px 21px 0px 24px;
 }
 
+@media screen and (min-width: 992px) {
+  .nav-content {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin-left: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 [data-menu="close"] {
   border: none;
   background: transparent;
@@ -30,36 +50,93 @@
   align-self: end;
 }
 
-.nav-list {
+@media screen and (min-width: 992px) {
+  [data-menu="close"] {
+    display: none;
+  }
+}
+
+.t {
   margin-top: 32px;
 }
 
-.nav-list li a {
+@media screen and (min-width: 992px) {
+  .nav-list {
+    margin-top: 0;
+    display: flex;
+    gap: 40px;
+    height: 42px;
+  }
+}
+
+.nav-list li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list a {
   color: var(--medium-grey);
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
+
+  cursor: pointer;
+}
+
+.nav-list a:hover {
+  color: var(--almost-black);
+}
+
+.has-submenu::after {
+  content: url(../../assets/images/icon-arrow-down.svg);
+  margin-left: 17px;
+}
+
+.has-submenu:hover::after {
+  content: url(../../assets/images/icon-arrow-down-black.svg);
 }
 
 .account-container {
   margin-top: 32px;
 }
 
-.account-container button {
+@media screen and (min-width: 992px) {
+  .account-container {
+    margin-top: 0;
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.login,
+.register {
   display: block;
   margin: 0 auto 16px;
   background: transparent;
-  padding: none;
+  padding: 0;
   font-family: "Epilogue", sans-serif;
   font-feature-settings: "clig" off, "liga" off;
   color: var(--medium-grey);
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.login:hover,
+.register:hover {
+  color: var(--almost-black);
 }
 
 .login {
   border: none;
+}
+
+@media screen and (min-width: 992px) {
+  .login {
+    margin-bottom: 0;
+  }
 }
 
 .register {
@@ -70,11 +147,27 @@
   margin-bottom: 0;
 }
 
+.register:hover {
+  border-color: var(--almost-black);
+}
+
+@media screen and (min-width: 992px) {
+  .register {
+    padding: 13px 22px;
+  }
+}
+
 .submenu {
   padding: 24px 0 24px 24px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .submenu {
+    display: none;
+  }
 }
 
 .submenu li a {
@@ -86,4 +179,5 @@
 .submenu img {
   height: 20px;
   width: auto;
+  margin-left: 0;
 }

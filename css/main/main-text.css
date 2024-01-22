@@ -1,5 +1,16 @@
 .main-text {
   padding: 0 16px;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .main-text {
+    order: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 104px;
+    padding: 0;
+  }
 }
 
 .main-text h1 {
@@ -11,6 +22,17 @@
   color: var(--almost-black);
 }
 
+@media screen and (min-width: 992px) {
+  .main-text h1 {
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -1.111px;
+    text-align: left;
+    margin-bottom: 48px;
+    width: 101%;
+  }
+}
+
 .main-text p {
   text-align: center;
   font-size: 16px;
@@ -18,4 +40,14 @@
   line-height: 26px;
   color: var(--medium-grey);
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .main-text p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 0;
+    max-width: 445px;
+  }
 }
