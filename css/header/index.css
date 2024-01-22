@@ -1,0 +1,20 @@
+@import url(nav.css);
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px 24px;
+}
+
+.logo {
+  display: block;
+  max-width: 87px;
+  max-height: 35px;
+}
+
+.menu {
+  border: none;
+  background: transparent;
+  padding: 0;
+  position: relative;
+}

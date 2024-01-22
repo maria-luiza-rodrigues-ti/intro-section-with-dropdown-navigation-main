@@ -13,22 +13,41 @@
   <header>
     <img src="assets/images/logo.svg" alt="Logo" class="logo" />
     <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="">Feature</a></li>
-        <li><a href="">Company</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">About</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-content">
+          <button class="close"><img src="assets/images/icon-close-menu.svg" alt=""></button>
+          <ul class="nav-list">
+            <li><a href="">Features <img src="assets/images/icon-arrow-down.svg" alt="Arrow Icon"></a>
+              <ul class="submenu">
+                <li><a href=""><img src="assets/images/icon-todo.svg" alt="To-do Icon">Todo List</a></li>
+                <li><a href=""><img src="assets/images/icon-calendar.svg" alt="Calendar Icon">Calendar</a></li>
+                <li><a href=""><img src="assets/images/icon-reminders.svg" alt="Reminders Icon">Reminders</a></li>
+                <li><a href=""><img src="assets/images/icon-planning.svg" alt="Planning Icon">Planning</a></li>
+              </ul>
+            </li>
+            <li><a href="">Company <img src="assets/images/icon-arrow-down.svg" alt="Arrow Icon"></a>
+              <ul class="submenu">
+                <li><a href="">History</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+          <div class="account-container">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+          </div>
+        </div>
+      </div>
     </nav>
-    <div class="account-container">
-      <button class="login">Login</button>
-      <button class="register">Register</button>
-    </div>
-    <button data-menu="button" aria-expanded="false" aria-controls="menu" class="menu"></button>
+    <button data-menu="button" aria-expanded="false" aria-controls="menu" class="menu"><img
+        src="assets/images/icon-menu.svg" alt=""></button>
   </header>
 
-  <section class="main">
-    <div class="main_text">
+  <main>
+    <div class="main-text">
       <h1>Make remote work</h1>
       <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
         productivity soar.</p>
@@ -45,7 +64,8 @@
       <img src="assets/images/image-hero-mobile.png" alt="Image Hero" class="main-image_mobile">
       <img src="assets/images/image-hero-desktop.png" alt="Image Hero" class="main-image_desktop">
     </div>
-  </section>
+  </main>
+
 </body>
 
 </html>

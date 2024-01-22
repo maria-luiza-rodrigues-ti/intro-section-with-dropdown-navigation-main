@@ -1,0 +1,51 @@
+@import url(main-text.css);
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text {
+  order: 1;
+}
+
+.learn-button {
+  order: 2;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  padding: 11px 22px;
+}
+
+.sponsors {
+  order: 3;
+  margin-top: 48px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsors img {
+  max-height: 26px;
+  display: block;
+  margin: auto 0;
+}
+
+.main-image {
+  margin-bottom: 47.75px;
+}
+
+.main-image_mobile {
+  width: 100%;
+}
+
+.main-image_desktop {
+  display: none;
+}

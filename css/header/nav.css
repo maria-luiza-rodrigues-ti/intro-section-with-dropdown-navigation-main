@@ -1,0 +1,86 @@
+.nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.nav-content {
+  width: calc(100% - 135px);
+  background: white;
+  margin-left: auto;
+  height: 100vh;
+  padding: 22px 21px 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-left: auto;
+}
+
+.nav-list {
+  margin-top: 32px;
+}
+
+.nav-list li a {
+  color: var(--medium-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.account-container {
+  margin-top: 32px;
+}
+
+.account-container button {
+  display: block;
+  margin: 0 auto 16px;
+  background: transparent;
+  padding: none;
+  font-family: "Epilogue", sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+  color: var(--medium-grey);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.login {
+  border: none;
+}
+
+.register {
+  width: 100%;
+  border-radius: 14px;
+  border: 1.5px solid var(--medium-grey);
+  padding: 13px 0;
+}
+
+.submenu {
+  padding: 24px 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.submenu li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.submenu img {
+  height: 20px;
+  width: auto;
+}
