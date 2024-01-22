@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 16px 24px;
+}
+
+.menu {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.menu::before {
+  content: url(../../assets/images/icon-menu.svg);
+  display: inline-block;
+}
+
+.nav {
+  display: none;
+}
+
+.account-container {
+  display: none;
+}
