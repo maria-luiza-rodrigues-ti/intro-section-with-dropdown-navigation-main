@@ -1,4 +1,5 @@
 @import url(main-text.css);
+@import url(main-image.css);
 
 main {
   display: grid;
@@ -17,7 +18,7 @@ main {
 
 .learn-button {
   order: 2;
-  background-color: var(--almost-black);
+  background: var(--almost-black);
   color: var(--almost-white);
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
@@ -25,14 +26,22 @@ main {
   font-weight: 700;
   display: block;
   margin: 0 auto;
-  border: none;
+  border: 1px solid var(--almost-black);
   border-radius: 15px;
   padding: 11px 22px;
+  box-sizing: border-box;
+}
+
+.learn-button:hover {
+  border-radius: 15px;
+  border: 1px solid var(--almost-black);
+  background: transparent;
+  color: var(--almost-black);
 }
 
 @media screen and (min-width: 992px) {
   .learn-button {
-    padding: 14px 30px;
+    padding: 13px 30px;
     margin: 51px auto 0 0;
     height: max-content;
     letter-spacing: -0.25px;
@@ -73,39 +82,5 @@ main {
 @media screen and (min-width: 992px) {
   .audiophile {
     max-height: 35px;
-  }
-}
-
-.main-image {
-  margin-bottom: 47.75px;
-}
-
-@media screen and (min-width: 992px) {
-  .main-image {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    margin-bottom: 0;
-    max-width: 640px;
-  }
-}
-
-.main-image_mobile {
-  width: 100%;
-}
-
-@media screen and (min-width: 992px) {
-  .main-image_mobile {
-    display: none;
-  }
-}
-
-.main-image_desktop {
-  display: none;
-}
-
-@media screen and (min-width: 992px) {
-  .main-image_desktop {
-    display: block;
-    width: 100%;
   }
 }

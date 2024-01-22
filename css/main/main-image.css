@@ -1,0 +1,33 @@
+.main-image {
+  margin-bottom: 47.75px;
+}
+
+@media screen and (min-width: 992px) {
+  .main-image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    margin-bottom: 0;
+    max-width: 480px;
+  }
+}
+
+.main-image_mobile {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .main-image_mobile {
+    display: none;
+  }
+}
+
+.main-image_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .main-image_desktop {
+    display: block;
+    width: 100%;
+  }
+}

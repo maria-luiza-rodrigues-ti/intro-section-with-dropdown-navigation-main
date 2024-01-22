@@ -1,3 +1,5 @@
+@import url(submenu.css);
+
 .nav {
   position: fixed;
   right: 0;
@@ -14,6 +16,7 @@
     position: relative;
     width: 100%;
     background: transparent;
+    overflow: visible;
   }
 }
 
@@ -29,6 +32,12 @@
   flex-direction: column;
   width: calc(100% - 135px);
   padding: 22px 21px 0px 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-content {
+    background: var(--almost-white);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -65,14 +74,22 @@
     margin-top: 0;
     display: flex;
     gap: 40px;
-    height: 42px;
+    height: 36px;
   }
 }
 
 .nav-list li {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  height: fit-content;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-list li {
+    position: relative;
+  }
 }
 
 .nav-list a {
@@ -80,12 +97,25 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-
   cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-list a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-list a:hover {
   color: var(--almost-black);
+}
+
+@media screen and (min-width: 992px) {
+  .has-submenu {
+    position: relative;
+  }
 }
 
 .has-submenu::after {
@@ -155,29 +185,4 @@
   .register {
     padding: 13px 22px;
   }
-}
-
-.submenu {
-  padding: 24px 0 24px 24px;
-  display: none;
-  flex-direction: column;
-  gap: 16px;
-}
-
-@media screen and (min-width: 992px) {
-  .submenu {
-    display: none;
-  }
-}
-
-.submenu li a {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.submenu img {
-  height: 20px;
-  width: auto;
-  margin-left: 0;
 }
