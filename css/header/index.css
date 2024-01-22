@@ -12,7 +12,7 @@ header {
   max-height: 35px;
 }
 
-.menu {
+[data-menu="open"] {
   border: none;
   background: transparent;
   padding: 0;

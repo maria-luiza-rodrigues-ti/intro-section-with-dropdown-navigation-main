@@ -1,31 +1,33 @@
 .nav {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-  width: 100%;
+  width: 0;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
+  overflow-x: hidden;
 }
 
-.nav-container {
+.open {
   width: 100%;
-  background: rgba(0, 0, 0, 0.75);
 }
 
 .nav-content {
-  width: calc(100% - 135px);
   background: white;
   margin-left: auto;
   height: 100vh;
-  padding: 22px 21px 0px 24px;
   display: flex;
   flex-direction: column;
+  width: calc(100% - 135px);
+  padding: 22px 21px 0px 24px;
 }
 
-.close {
+[data-menu="close"] {
   border: none;
   background: transparent;
   padding: 0;
-  margin-left: auto;
+  align-self: end;
 }
 
 .nav-list {
@@ -65,6 +67,7 @@
   border-radius: 14px;
   border: 1.5px solid var(--medium-grey);
   padding: 13px 0;
+  margin-bottom: 0;
 }
 
 .submenu {
