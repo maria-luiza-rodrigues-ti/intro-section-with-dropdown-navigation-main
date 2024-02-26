@@ -13,6 +13,8 @@ main {
       auto;
     padding: 67px 130px 0 165px;
     column-gap: 125px;
+    max-width: 1145px;
+    margin: 0 auto;
   }
 }
 
