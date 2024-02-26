@@ -1,7 +1,6 @@
 export default function initSubmenu() {}
 
 const buttons = document.querySelectorAll(".has-submenu");
-const submenus = document.querySelectorAll(".submenu");
 
 function toggleSubmenu(event) {
   const submenu = event.target.nextElementSibling;
